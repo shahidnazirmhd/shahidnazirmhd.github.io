@@ -42,7 +42,8 @@ async function submitMessage(data) {
     const response = await fetch('https://mwafnejtdykuseyscuuq.supabase.co/functions/v1/validate-origin', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'https://shahidnazirmhd.github.io'
         },
         body: JSON.stringify(data),
     });
