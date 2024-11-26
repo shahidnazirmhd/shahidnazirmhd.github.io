@@ -20,7 +20,7 @@ async function handleFormSubmit(event) {
     // Insert data into Supabase
     try {
         const { error } = await supabaseClient
-            .from('messages') // Replace with your table name
+            .from('messages') 
             .insert([data]);
 
         if (error) {
