@@ -355,34 +355,35 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form id="message-form" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                        <input name="name" type="text" size="50" class="form-control" placeholder="Your Name" required>                 
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                        <input name="email" type="email" class="form-control" placeholder="Enter Email"requried>                 
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                        <textarea name="message" id="comment" rows="6"  class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                        <button type="submit" class="btn btn-outline-primary rounded">Send Message</button>                
                     </div>
                 </div>  
             </form><!-- end of contact form -->
+            <div id="message"></div>
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
     <!-- footer -->
     <div class="container">
         <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://shahidnazirmhd.github.io/">shahidnazirmhd</a></p>
             <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://github.com/shahidnazirmhd" class="link"><i class="ti-github"></i></a>
                 <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
                 <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
                 <a href="javascript:void(0)" class="link"><i class="ti-youtube"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
                 <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
             </div>
         </footer>
@@ -397,6 +398,13 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+    <!-- htmx js -->
+    <script th:src="@{assets/js/htmx.js}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0"></script> -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="assets/js/messsage.js"></script>
+
 
 </body>
 </html>
