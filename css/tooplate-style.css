@@ -270,6 +270,11 @@ b, strong {
   color: #ffffff;
 }
 
+.dark-mode .card-working, .dark-mode .list-group-item, .dark-mode .card-working h3 {
+  background-color: #474559;
+  color: #eee;
+}
+
 .timeline-wrapper {
   position: relative;
   padding: 22px 0;
@@ -369,35 +374,10 @@ b, strong {
   width: 100%;
 }
 
-.contact-form {
-  position: relative;
+.message-form iframe {
+  width: 100%;
 }
-.contact-form .form-control {
-  background: transparent;
-  border-radius: 2px;
-  outline: none;
-  box-shadow: none;
-  font-weight: bold;
-  margin: 16px 0;
-}
-.contact-form .form-control:not(textarea) {
-  height: 48px;
-}
-.contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: #ffc200;
-}
-.contact-form .submit-btn {
-  background: #ffc200;
-  border-radius: 50px;
-  color: #ffffff;
-  font-weight: bold;
-  border: 0;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.contact-form .submit-btn:hover {
-  background: #474559;
-}
+
 
 .contact-info {
   background: #474559;
@@ -459,6 +439,27 @@ b, strong {
   transform: scale(1.02);
 }
 
+.card-working {
+  background-color: #f9f9f9; /* Light background for the card */
+  border: none; /* Remove border */
+}
+
+.card-working h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Dark text for the heading */
+}
+
+.list-group-item {
+  font-size: 1rem;
+  color: #555; /* Neutral text color */
+  padding: 10px 15px;
+}
+
+.list-group-item:hover {
+  background-color: #eef5ff; /* Light hover effect */
+  color: #0056b3; /* Highlighted text color */
+}
 
 
 @media (min-width: 1270px) {
