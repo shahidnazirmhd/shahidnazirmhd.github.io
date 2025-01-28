@@ -270,7 +270,7 @@ b, strong {
   color: #ffffff;
 }
 
-.dark-mode .card-working, .dark-mode .list-group-item, .dark-mode .card-working h3 {
+.dark-mode .card-working, .dark-mode .list-group-item, .dark-mode .card-working h4 {
   background-color: #474559;
   color: #eee;
 }
@@ -444,7 +444,7 @@ b, strong {
   border: none; /* Remove border */
 }
 
-.card-working h3 {
+.card-working h4 {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333; /* Dark text for the heading */
