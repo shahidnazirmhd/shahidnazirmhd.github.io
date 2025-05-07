@@ -566,3 +566,7 @@ b, strong {
     vertical-align: top;
   }
 }
+
+.li-button {
+  background-color: cornsilk;
+}
